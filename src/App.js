@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import {Footer} from'./Footer/Footer';
+import { Footer } from './Footer/Footer';
+import { Navbar } from './Navbar/Navbar';
 
-class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <ul>
-            <li><a href="/"><img src={logo} className="App-logo" alt="logo" /></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Some other</a></li>
-          </ul>
+        <div>
+          <Navbar />
         </div>
         <div>
           <Footer />
@@ -22,5 +17,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
